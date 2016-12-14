@@ -1,0 +1,449 @@
+html,body{
+	width: 100%;
+	margin:0;
+	padding:0;
+	color: #333;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 400;
+	letter-spacing: 1.45px;
+	line-height: 1.4;
+	overflow-x:hidden;
+	min-height: 100%;
+
+}
+
+body.toggled{
+	overflow-y: hidden;
+}
+
+h1,h2,h3,h4,h5,h6{
+	margin: 0;
+	font-family: 'Ubuntu', sans-serif;
+
+}
+
+img{
+	display: block;
+	max-width: 100%;
+	height: auto;
+
+}
+
+.img-ban{
+	background: no-repeat;
+}
+
+ul, ol, li{
+	margin:0;
+	padding:0;
+	list-style-type: none;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+p{
+	font-size: 16px;
+}
+::-moz-selection { 
+	background-color:#333;
+	color: #fff; 
+}
+::selection { 
+	background-color:#333;
+	color: #fff; 
+}
+
+
+a:link{
+	text-decoration: none;
+	
+}
+
+a:visited{
+	text-decoration: none;
+}
+
+.clearfix::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.clear {
+clear: both;
+}
+
+.jed{
+	float: left;
+}
+
+.dva{float: right;}
+
+
+
+#dark-overlay{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	display: none;
+	top: 0;
+	background-color: rgba(0,0,0,0.7);
+	z-index: 99;
+}
+
+
+/*-- HEADER --*/
+
+header{
+	position: relative;
+	display: block;
+	width: 100%;
+	
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #2bc0a2;
+	}
+
+header nav{
+	position: absolute;
+	width: 100%;
+	height: auto;
+	top: 0;
+	left: 0;
+}
+
+#logo{
+	float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+
+.ham-menu:link{
+	color: #333;
+	font-size:30px;
+	float: right;
+	padding-top: 15px;
+	padding-bottom: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.ham-menu:visited{
+	color: #333;
+}
+
+.ham-menu:hover{
+	color: #000;
+}
+
+.ham-menu:active{
+	color: #000;
+}
+
+
+/*-- Slide show --*/
+#slide-menu{
+	position: fixed;
+	width: 240px;
+	height: 100vh;
+	top: 0;
+	right: -281px;
+	padding-left: 15px;
+	padding-right: 15px;
+	background-color: #fff;
+	border-left: 1px solid #ccc;
+	z-index: 100;
+	transition: all 0.2s cubic-bazier(0,0.57,0.74,1.06);
+	-webkit-transition:all 0.2s cubic-bazier(0,0.57,0.74,1.06);
+	-moz-transition:all 0.2s cubic-bazier(0,0.57,0.74,1.06);
+}
+
+
+#slide-menu.toggled{
+	right: 0;
+}
+
+#slide-menu ul{
+	margin-top: 85px;
+
+}
+
+.ham-menu-close{
+	float: right;
+	margin-left: 30px;
+	margin-right: 20px;
+	margin-top: 25px;
+	cursor: pointer;
+	font-size: 24px;
+}
+
+.select{
+	background: red;
+}
+
+
+#slide-menu ul li{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	display: block;
+	border-top: 1px solid #ccc;
+}
+
+#slide-menu ul li a:link{
+	font-size: 18px;
+	color: #333;
+}
+
+#slide-menu ul li a:visited{
+
+}
+
+#slide-menu ul li a:active{
+
+}
+
+#slide-menu ul li:hover{
+	background: red;
+
+}
+
+.banner {  
+  position: relative;
+  z-index: -1000;
+
+}
+
+.banner .content h2 {
+  margin:0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 100%;
+  color: #333;
+  text-align: center;
+  font-size:120px;
+}
+
+.banner-txt {
+  margin-top: 120px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 810px;
+  letter-spacing: 1px;
+  line-height: 40px;
+  color: #333;
+  font-size: 30px;
+  text-align: center;
+}
+
+main{
+  	width:100%;
+	margin: 0 auto;
+ 	overflow: hidden;
+
+}
+
+.col{
+	display: inline-block;
+    width: 33.333%;
+    height:400px;
+    float: left;
+    text-align: center;
+    
+}
+
+.col img{
+	margin: 0 auto;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    
+}
+
+.col p{
+	margin: 30px;
+}
+.col1   {background: url(img/tt.png);background-repeat: no-repeat;background-size: contain;background-position: center;}
+.col1 h2{ font-size: 24px;letter-spacing: 4px;line-height: 30px;}
+.col2   { background: rgba(204, 204, 204, 0.29);}
+.col2 h2{ font-size: 24px;letter-spacing: 4px;line-height: 30px;}
+.col3   {}
+.col3 h2{ font-size: 24px;letter-spacing: 4px;line-height: 30px;}
+
+
+
+
+h4::before { 
+    content: url(img/place-pin-ico.png);
+    margin: 0 5px 0 -5px;
+    }
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 2% 10%;
+}
+
+footer{
+    background: #202020;
+}
+
+footer h4{
+    margin: 0;
+    color: #555;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+
+footer ul{
+    float: left;
+    width: 33%;
+    list-style-type: none;
+}
+
+footer li{
+    color: #aaa;
+    width: 80%;
+    margin: 20px 0;
+    font-size: 14px;
+    line-height: 1.6em;
+    font-weight: normal;
+} 
+
+
+.quote-container {
+    background-color: #f7f7f7;
+}
+.section-content {
+    padding: 3em 0;
+}
+
+.quote-container h2{
+	color: #3b3838;
+    font-size: 41px;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 30px;
+}
+.quote-container h3 {
+    color: #c5c4c4;
+    font-size: 14px;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 30px;
+    font-weight: normal;
+}
+
+.quote-container p {
+    color: #687078;
+    margin: 0 auto 1.5em;
+    width: 50%;
+    padding: 40px;
+}
+
+/*-- MEDIA QUERY --*/
+
+@media only screen and (max-width:768px){
+    
+    .col1, .col2{
+        width:50%;
+    }
+    .col3{
+        width:100%;
+    }
+}
+
+@media only screen and (max-width:480px){
+    .col{
+       float: none;
+        width:100%;
+    }
+    #logo {
+		margin-top: 15px;
+	}
+
+	.banner .content h2{
+		font-size: 40px;
+		margin:-25px 0;
+	}
+
+	.banner-txt{
+		display: block;
+		font-size: 16px;
+		margin:40px 0;
+		width: 810px;
+    	line-height: 20px;
+	}
+
+	.ham-menu:link{
+		padding-top: 10px;
+		font-size: 25px;
+	}
+
+	.img-responsive1{width: 20%;height: auto;}
+	.img-responsive2{width: 20%;height: auto;}
+	.img-responsive3{width: 20%;height: auto;}
+
+.footer .social [class^="icon-"] {
+    margin: 0 10px;
+  }
+
+
+	.wrapper {
+		text-align: center;
+	}
+
+  .footer-distributed ul{
+    width: 100%;
+    float: none;
+    border-top: 2px solid #333;}
+
+
+  .footer-distributed li.place-pin-ico h4{
+    	
+    	padding-left: 0;
+    	text-align: center;
+    }
+
+	}
+
+@media only screen and (max-width:320px){
+	#logo {
+		margin-top: 15px;
+	}
+
+	.banner .content h2{
+		font-size:30px;
+		margin: 0 auto;
+	}
+
+	.banner-txt{
+		display: block;
+    	font-size: 9px;
+    	margin: 45px 0;
+    	width: 300px;
+    	line-height: 15px;
+	}
+
+	.ham-menu:link{
+		padding-top: 15px;
+		font-size: 25px;
+	}
+
+	.img-responsive1{width: 20%;height: auto;}
+	.img-responsive2{width: 20%;height: auto;}
+	.img-responsive3{width: 20%;height: auto;}
+	}
+
+
+}
